@@ -19,7 +19,7 @@ const config: Phaser.Types.Core.GameConfig = {
             debug: false,
         },
     },
-    scene: [MainMenu, GameScene, Boot, Preloader, GameOver],
+    scene: [Boot, Preloader, MainMenu, GameScene, GameOver],
 };
 
 const StartGame = (parent: string) => new Game({ ...config, parent });
